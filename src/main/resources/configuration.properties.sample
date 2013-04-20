@@ -1,0 +1,14 @@
+app.name=bennu-webappp
+db.alias=//localhost:3306/webapp?useUnicode=true&amp;characterEncoding=UTF-8&amp;clobCharacterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
+db.user=root
+db.pass=
+language=pt
+location=PT
+variantwebapp=
+localhost.cas.enable=false
+rest.secret=restsecret
+
+# comma separated string with language format <language>-<country>
+# example locales=pt-PT,en-US,en-GB
+
+locales=pt-PT,en-US,en-GB
