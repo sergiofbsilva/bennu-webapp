@@ -19,7 +19,7 @@
 		<version.pt.ist.bennu.bennu-portal>2.0-SNAPSHOT</version.pt.ist.bennu.bennu-portal>
 		<version.pt.ist.bennu.bennu-admin>2.0-SNAPSHOT</version.pt.ist.bennu.bennu-admin>
 		<version.pt.ist.bennu.bennu-theme>1.0-SNAPSHOT</version.pt.ist.bennu.bennu-theme>
-		<version.pt.ist.bennu.dot-theme>1.0</version.pt.ist.bennu.dot-theme>
+		<version.pt.ist.bennu.dot-theme>1.0-SNAPSHOT</version.pt.ist.bennu.dot-theme>
 	</properties>
 	<build>
 		<plugins>
@@ -91,7 +91,7 @@
 			<version>${version.pt.ist.bennu.bennu-theme}</version>
 		</dependency>
 		<dependency>
-			<groupId>pt.ist</groupId>
+			<groupId>pt.ist.bennu</groupId>
 			<artifactId>dot-theme</artifactId>
 			<version>${version.pt.ist.bennu.dot-theme}</version>
 		</dependency>
