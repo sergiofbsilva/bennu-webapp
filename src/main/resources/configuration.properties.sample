@@ -12,3 +12,14 @@ rest.secret=restsecret
 # example locales=pt-PT,en-US,en-GB
 
 locales=pt-PT,en-US,en-GB
+
+
+#Scheduler
+
+#The scheduler will wait this value till next attempt to run scheduler
+#This value must be greater than 1.
+scheduler.lease.time.minutes=5
+
+
+#Number of threads running waiting for elements in the task running queue.
+scheduler.queue.threads.number=2
