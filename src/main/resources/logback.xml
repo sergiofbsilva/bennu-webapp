@@ -1,0 +1,42 @@
+<configuration>
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder 
+			by default -->
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>
+	</appender>
+	
+	<appender name="SIFT" class="ch.qos.logback.classic.sift.SiftingAppender">
+    <!-- in the absence of the class attribute, it is assumed that the
+         desired discriminator type is
+         ch.qos.logback.classic.sift.MDCBasedDiscriminator -->
+    <discriminator>
+      <key>tasklog</key>
+      <defaultValue>unknown</defaultValue>
+    </discriminator>
+    <sift>
+      <appender name="TaskFileAppender-${tasklog}" class="ch.qos.logback.core.FileAppender">
+		<file>/tmp/${tasklog}/log</file>
+		<encoder>
+			<pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n
+			</pattern>
+		</encoder>		
+	</appender>
+    </sift>
+  </appender>
+
+	<logger name="pt.ist" level="INFO">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	<logger name="module" level="INFO">
+		<appender-ref ref="STDOUT" />
+	</logger>
+	
+	<logger name="crontask" level="TRACE">
+		<appender-ref ref="SIFT"/>
+	</logger>
+
+</configuration>
