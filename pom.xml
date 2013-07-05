@@ -33,7 +33,7 @@
 					<stopPort>9999</stopPort>
 					<encoding>UTF-8</encoding>
 					<webApp>
-						<contextPath>/xpto</contextPath>
+						<contextPath>/bennu2</contextPath>
 						<!-- <baseResource implementation="org.eclipse.jetty.util.resource.ResourceCollection"> -->
 						<!-- <resourcesAsCSV> -->
 						<!-- ../bennu/bennu-portal/src/main/webapp, -->
