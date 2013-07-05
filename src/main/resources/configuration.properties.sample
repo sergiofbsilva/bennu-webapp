@@ -1,25 +1,13 @@
-app.name=bennu-webappp
-db.alias=//localhost:3306/webapp?useUnicode=true&amp;characterEncoding=UTF-8&amp;clobCharacterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull
-db.user=root
-db.pass=
 language=pt
 location=PT
-variantwebapp=
+variant=
 localhost.cas.enable=false
-rest.secret=restsecret
+rest.secret=bonecenas
 
 # comma separated string with language format <language>-<country>
 # example locales=pt-PT,en-US,en-GB
 
 locales=pt-PT,en-US,en-GB
 
-
-#Scheduler
-
-#The scheduler will wait this value till next attempt to run scheduler
-#This value must be greater than 1.
-scheduler.lease.time.minutes=5
-
-
-#Number of threads running waiting for elements in the task running queue.
-scheduler.queue.threads.number=2
+scheduler.lease.time.minutes=2
+scheduler.queue.threads.number=4
